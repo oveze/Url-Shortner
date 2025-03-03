@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose';
-import { getOriginalUrl, shortUrl } from '../Project_Url/Controllers/url.js'
+import { getOriginalUrl, shortUrl } from "./Controllers/url.js";
+
 
 
 
@@ -31,7 +32,7 @@ app.post('/short', shortUrl )
 app.get('/:shortCode',getOriginalUrl);
 
 
-const port = 2000;
+// const port = 2000;
 // app.listen(port,()=> console.log(`sever is running on port ${port}`))
 
 export default app;
