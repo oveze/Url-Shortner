@@ -25,6 +25,8 @@ app.get('/',(req,res)=> {
 app.post('/short', shortUrl )
 
 
+export default app;
+
 //redrict to original url using short code dynamic routing
 app.get('/:shortCode',getOriginalUrl);
 
