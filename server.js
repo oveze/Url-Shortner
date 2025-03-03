@@ -25,11 +25,13 @@ app.get('/',(req,res)=> {
 app.post('/short', shortUrl )
 
 
-export default app;
+
 
 //redrict to original url using short code dynamic routing
 app.get('/:shortCode',getOriginalUrl);
 
 
 const port = 2000;
-app.listen(port,()=> console.log(`sever is running on port ${port}`))
+// app.listen(port,()=> console.log(`sever is running on port ${port}`))
+
+export default app;
