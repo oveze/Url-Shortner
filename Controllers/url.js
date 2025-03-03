@@ -5,7 +5,7 @@ export const shortUrl = async (req,res)=>{
  const longUrl = req.body.longUrl;
  const shortCode = shortid.generate();
 
- const shortUrl = `http://localhost:2000/${shortCode}`
+ const shortUrl = `https://url-shortner-x4cw.vercel.app/${shortCode}`
 
  // save to database
  const newUrl = new Url({shortCode,longUrl})
